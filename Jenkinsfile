@@ -5,7 +5,8 @@ pipeline {
         stage('Monitor Git Repository for Changes') {
             steps {
                 // This step will pull changes from the Git repository
-                git url: 'https://github.com/manish02nov/ProjCert.git', branch: 'master'
+                // git url: 'https://github.com/manish02nov/ProjCert.git', branch: 'master'
+                checkout scm
             }
         }
 
